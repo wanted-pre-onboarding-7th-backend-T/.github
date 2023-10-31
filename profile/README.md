@@ -55,9 +55,11 @@
 - Service 메소드는 HTTP 메서드와 중복되지 않는 적절한 이름으로 작성한다.
 
 <br/>
+
 ### Controller
 - 컨트롤러 메소드는 ResponseEntity<Dto> 리턴한다.
 - 예시
+
 ```java
 @PostMapping
 public ResponseEntity<ResponseDto<UserIdResponseDto>> postUser(
@@ -68,10 +70,12 @@ public ResponseEntity<ResponseDto<UserIdResponseDto>> postUser(
 }
 ```
 <br/>
+
 ### Service
 - 요청에 맞는 Dto 를 리턴
 - Dto → Entity 클래스로 변환은 도메인별 Mapper 클래스가 담당
 - 예시
+  
 ```java
 @Component
 @RequiredArgsConstructor
